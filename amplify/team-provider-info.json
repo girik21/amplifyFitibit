@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-firbt-dev-d2b3f-authRole",
+      "UnauthRoleArn": "arn:aws:iam::886436956293:role/amplify-firbt-dev-d2b3f-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::886436956293:role/amplify-firbt-dev-d2b3f-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-firbt-dev-d2b3f-deployment",
+      "UnauthRoleName": "amplify-firbt-dev-d2b3f-unauthRole",
+      "StackName": "amplify-firbt-dev-d2b3f",
+      "StackId": "arn:aws:cloudformation:us-west-2:886436956293:stack/amplify-firbt-dev-d2b3f/6a509ad0-1e5b-11f0-9adc-02399885a2c9",
+      "AmplifyAppId": "d1h19b5kxf7xt8"
+    },
+    "categories": {
+      "auth": {
+        "firbtaba5d511": {}
+      },
+      "function": {
+        "usersLambda": {
+          "deploymentBucketName": "amplify-firbt-dev-d2b3f-deployment",
+          "s3Key": "amplify-builds/usersLambda-744f337678382b463442-build.zip"
+        }
+      },
+      "api": {
+        "useradd": {}
+      },
+      "storage": {
+        "usersTable": {}
+      }
+    }
+  }
+}
