@@ -19,10 +19,19 @@
         "usersLambda": {
           "deploymentBucketName": "amplify-firbt-dev-d2b3f-deployment",
           "s3Key": "amplify-builds/usersLambda-744f337678382b463442-build.zip"
+        },
+        "activityLambda": {
+          "deploymentBucketName": "amplify-firbt-dev-d2b3f-deployment",
+          "s3Key": "amplify-builds/activityLambda-346e6541586170755953-build.zip",
+          "dbHostname": "activity-database.cngc8eoyk40w.us-west-2.rds.amazonaws.com",
+          "dbUsername": "admin123",
+          "dbPassword": "nokia3310",
+          "dbName": "ACTIVITY_PG"
         }
       },
       "api": {
-        "useradd": {}
+        "useradd": {},
+        "activityApi": {}
       },
       "storage": {
         "usersTable": {}

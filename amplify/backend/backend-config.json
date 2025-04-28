@@ -1,5 +1,19 @@
 {
   "api": {
+    "activityApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "activityLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
     "useradd": {
       "dependsOn": [
         {
@@ -44,6 +58,12 @@
     }
   },
   "function": {
+    "activityLambda": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "usersLambda": {
       "build": true,
       "dependsOn": [
@@ -62,6 +82,54 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_activityLambda_dbHostname": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "activityLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_activityLambda_dbName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "activityLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_activityLambda_dbPassword": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "activityLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_activityLambda_dbUsername": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "activityLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_activityLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "activityLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_activityLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "activityLambda"
+        }
+      ]
+    },
     "AMPLIFY_function_usersLambda_deploymentBucketName": {
       "usedBy": [
         {

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "paths": {
+    "/auth/start": {
+      "name": "/auth/start",
+      "lambdaFunction": "activityLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/auth/complete": {
+      "name": "/auth/complete",
+      "lambdaFunction": "activityLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  },
+  "cors": {
+    "allowOrigins": [
+      "http://localhost:3000"
+    ],
+    "allowHeaders": [
+      "Content-Type"
+    ],
+    "allowMethods": [
+      "GET",
+      "POST",
+      "OPTIONS"
+    ],
+    "allowCredentials": true
+  }
+}
